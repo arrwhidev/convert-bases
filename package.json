@@ -1,0 +1,34 @@
+{
+  "name": "convert-bases",
+  "version": "0.0.1",
+  "description": "Simple base converter for numeral systems which also supports custom alphabets.",
+  "keywords": [
+      "base converter",
+      "converter",
+      "numeral",
+      "numeral systems",
+      "base62",
+      "binary",
+      "hexadecimal"
+  ],
+  "author": "Arran White",
+  "homepage": "https://github.com/arrwhidev/convert-bases",
+  "repository": "git@github.com:arrwhidev/convert-bases.git",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "files": [
+      "lib/index.js"
+  ],
+  "scripts": {
+    "test": "mocha -b",
+    "test-watch": "mocha --watch -b",
+    "build": "babel src -d lib",
+    "prepublish": "npm test && npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
