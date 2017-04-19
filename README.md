@@ -17,12 +17,16 @@ Useful for creating url shortners, e.g.
  * Hexadecimal `converter({ type: 16 })`
  * Base62 `converter({ type: 62 })`
  * Custom `converter({ alphabet: '123[]+-=()X.,' })`
+ 
+## Usage
+https://www.npmjs.com/package/convert-bases
+```javascript
+const converter = require('convert-bases');
+```
 
 ## Example
 
 ```javascript
-    const converter = require('convert-bases');
-
     // Uses Base62 by default (useful for URL shortners).
     const base62Converter = converter();
 
